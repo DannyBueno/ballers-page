@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { CardList } from './components/card-list/card-list.component';
+import { SearchBox } from './components/search-box/search-box.component.jsx';
 
 class App extends Component {
   constructor() {
@@ -8,7 +9,8 @@ class App extends Component {
 
     // array of the players
       this.state = {
-       ballers: []
+       ballers: [],
+       searchField: ''
     };
   }
 
@@ -20,12 +22,23 @@ class App extends Component {
   }
 
   render() {
+      //Object destructuring 
+       const { ballers, searchField } =  this.state;
+       //filtering the search input 
+       const filteredBallers = ballers.filter(ballers =>
+        ballers.name.toLowerCase().includes(searchField.toLowerCase())
+        );
+
     return(
       <div className="App">
-        <CardList ballers={this.state.ballers}>
-          {this.state.ballers.map(ballers =>( 
-           <h1 key={ballers.id}> {ballers.name } </h1>))}
-        </CardList>
+        
+          <SearchBox
+            placeholder='search ballers'
+            handleChange={e => 
+              this.setState({ searchField: e.target.value})}
+         />
+        <CardList ballers={filteredBallers}/>
+         
     </div>
 
     );
