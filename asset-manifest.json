@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ballers-page/static/css/main.6e503292.chunk.css",
+    "main.js": "/ballers-page/static/js/main.1b084acd.chunk.js",
+    "main.js.map": "/ballers-page/static/js/main.1b084acd.chunk.js.map",
+    "runtime-main.js": "/ballers-page/static/js/runtime-main.db2839a8.js",
+    "runtime-main.js.map": "/ballers-page/static/js/runtime-main.db2839a8.js.map",
+    "static/js/2.6fc58b3b.chunk.js": "/ballers-page/static/js/2.6fc58b3b.chunk.js",
+    "static/js/2.6fc58b3b.chunk.js.map": "/ballers-page/static/js/2.6fc58b3b.chunk.js.map",
+    "index.html": "/ballers-page/index.html",
+    "precache-manifest.3cd2c1d4bc52ca4dafa0a41fb79136cc.js": "/ballers-page/precache-manifest.3cd2c1d4bc52ca4dafa0a41fb79136cc.js",
+    "service-worker.js": "/ballers-page/service-worker.js",
+    "static/css/main.6e503292.chunk.css.map": "/ballers-page/static/css/main.6e503292.chunk.css.map",
+    "static/js/2.6fc58b3b.chunk.js.LICENSE.txt": "/ballers-page/static/js/2.6fc58b3b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db2839a8.js",
+    "static/js/2.6fc58b3b.chunk.js",
+    "static/css/main.6e503292.chunk.css",
+    "static/js/main.1b084acd.chunk.js"
+  ]
+}
